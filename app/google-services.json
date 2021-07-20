@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "625208442594",
+    "project_id": "narae-82151",
+    "storage_bucket": "narae-82151.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625208442594:android:53365930486ad58e35e8bb",
+        "android_client_info": {
+          "package_name": "NARAE.QR"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625208442594-jhg5iilnkqt1tbk3kbv0ijenjgafpljr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiVJUpJF7UCbsi1JbmcpbEoj-HkVoTq4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625208442594-jhg5iilnkqt1tbk3kbv0ijenjgafpljr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:625208442594:android:ca5168298d10b98b35e8bb",
+        "android_client_info": {
+          "package_name": "com.example.narae"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "625208442594-jhg5iilnkqt1tbk3kbv0ijenjgafpljr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBiVJUpJF7UCbsi1JbmcpbEoj-HkVoTq4s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "625208442594-jhg5iilnkqt1tbk3kbv0ijenjgafpljr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
