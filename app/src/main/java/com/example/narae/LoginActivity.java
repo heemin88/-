@@ -46,7 +46,6 @@ public class LoginActivity extends AppCompatActivity {
         mLoginBtn = findViewById(R.id.btn_login);
         mIdText = findViewById(R.id.et_id);
         mPasswordText = findViewById(R.id.et_pwd);
-        cb_save = (CheckBox) findViewById(R.id.cb_save);
         loginInformation = getSharedPreferences("loginInformation", 0);
         editor = loginInformation.edit();
         String loginId, loginPwd;
@@ -54,7 +53,7 @@ public class LoginActivity extends AppCompatActivity {
         loginPwd = loginInformation.getString("password",null);
         if(loginId !=null && loginPwd != null) {
                 Toast.makeText(LoginActivity.this, loginId +"님 자동로그인 입니다.", Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
                 startActivity(intent);
                 finish();
         }
@@ -79,7 +78,7 @@ public class LoginActivity extends AppCompatActivity {
                                     editor.putString("id",id);
                                     editor.putString("password",pwd);
                                     editor.commit();
-                                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                    Intent intent = new Intent(LoginActivity.this, MainActivity2.class);
                                     startActivity(intent);
                                     Log.d(TAG, "DocumentSnapshot data: " + document.getData());
                                     Toast.makeText(LoginActivity.this,"로그인에 성공하였습니다.",Toast.LENGTH_SHORT).show();

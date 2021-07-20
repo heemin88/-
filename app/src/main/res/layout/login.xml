@@ -38,11 +38,7 @@
             android:textColorHint="@color/input_register_hint"
             android:inputType="textPassword"
             android:layout_height="wrap_content" />
-        <CheckBox
-            android:id="@+id/cb_save"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="자동 로그인" />
+
         <Button
             android:id="@+id/btn_login"
             android:layout_width="fill_parent"

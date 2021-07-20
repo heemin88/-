@@ -34,11 +34,12 @@ import static java.lang.Integer.parseInt;
 
 public class MainActivity extends AppCompatActivity {
 
-    public class test extends AppCompatActivity{
-        protected void onCreate(Bundle savedInstanceState)
-        {
-            super.onCreate( savedInstanceState ); setContentView( R.layout.activity_main ); // 앱 실행시 Background Service 실행
-           // Intent serviceintent = new Intent( test.this, MyService.class ); startService( serviceintent ); } }
+    public class test extends AppCompatActivity {
+        protected void onCreate(Bundle savedInstanceState) {
+            super.onCreate(savedInstanceState);
+            setContentView(R.layout.activity_main); // 앱 실행시 Background Service 실행
+            // Intent serviceintent = new Intent( test.this, MyService.class ); startService( serviceintent ); } }
         }
 
+    }
 }
