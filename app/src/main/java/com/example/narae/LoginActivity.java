@@ -28,7 +28,6 @@ public class LoginActivity extends AppCompatActivity {
 
     Button mLoginBtn;
     EditText mIdText, mPasswordText;
-    CheckBox cb_save;
     Context mContext;
 
     private FirebaseFirestore firestore ;
