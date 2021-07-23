@@ -1,8 +1,12 @@
 # SW-NARAE
 ### 팀명 :NARAE 
 ### 팀원 : 박희민(팀장) , 양선아, 양희진, 이다현
+### 작품명 : INSIDE OUT
+### 유튜브 시영영상 링크 : https://www.youtube.com/watch?v=gctEF-o3G5M
 
-# Inside Out
+ # INSIDE OUT
+
+ ## 주제: 학교건물 출입 자동관리 어플
 
 ### 1. 기존의 학교 건물의 출입관리의 문제점
 - 학교건물에 출입할 때 QR코드를 매번 찍어야 함
