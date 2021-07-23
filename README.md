@@ -20,12 +20,13 @@
   - 자동으로 건물 출입 여부를 확인하여 해당 건물의 출입자 명단을 외부 DataBase에 저장
 
 ### 3. Application 실행방법
- (1) https://github.com/heemin88/SW-NARAE/blob/apk/release/release/app-release.apk 를 통해 다운습니다.<p>
+ (1) https://github.com/heemin88/SW-NARAE/blob/apk/release/release/app-release.apk 또는 main branch의 app-release.apk 파일을 통해 다운습니다.<p>
  (2) 앱을 실행시,  로그인 화면이 뜹니다. 임시 아이디 '<strong>asdf</strong>'와 임시 비밀번호 '<strong>1234</strong>'를 입력하면 로그인이 가능합니다.<p>
  (3) 로그인 시 "앱 실행을 위해서는 권한을 설정해야 합니다!"라는 문구가 하단에 뜨며 애플리케이션 설정창이 자동으로 뜹니다.<p>
  (4) 앱 목록에서 NARAE 앱을 찾아 탭한 뒤 위치 권한을 '<strong>항상 허용</strong>'으로 설정해둡니다.<p>
  (5) 다시 앱 화면으로 돌아가면 정상적으로 앱 실행이 가능합니다.<p>
- (6) 백그라운드 작동 확인 및 테스트를 쉽게 하기 위해 앱 밑 쪽에 사용자의 현재 위도와 경도를 계속 띄우도록 해두었습니다.
+ (6) 백그라운드 작동 확인 및 테스트를 쉽게 하기 위해 앱 밑 쪽에 사용자의 현재 위도와 경도를 계속 띄우도록 해두었습니다.<p>
+ (7) IT4호관, 융복합관, 공대 9호관, 공대 12호관의 범위만을 임의로 설정해놓았으니 해당 건물에서 테스트 가능합니다.<p>
 
 ### 4. Application 설명
 - Android Studio 를 이용해 개발
