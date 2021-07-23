@@ -114,9 +114,9 @@ public class MyService extends Service {
             ArrayList<Building> buildinglist = new ArrayList<>();
             buildinglist.add(new Building("융복합관",35.88819,35.88785,128.61201,128.61142));
             buildinglist.add(new Building("공대9호관",35.88714,35.88670,128.60906,128.60791));
-            buildinglist.add(new Building("IT 4호관",35.88873,35.88785,128.61129,128.61065));
+            buildinglist.add(new Building("IT 4호관",35.88830,35.88825,128.6110,128.6108));
             buildinglist.add(new Building("공대 12호관",35.88874,35.88823,128.61037,128.60928));
-            buildinglist.add(new Building("희진이 언니 집",35.88573,35.88560,128.6109,128.610791));
+            //buildinglist.add(new Building("희진이 언니 집",35.88573,35.88560,128.6109,128.610791));
             Intent intent = new Intent(MyService.this, MainActivity2.class);
             PendingIntent pendingIntent = PendingIntent.getActivity(MyService.this, 0, intent, PendingIntent.FLAG_UPDATE_CURRENT);
             NotificationChannel channel = new NotificationChannel("channel", "play!!",
@@ -142,7 +142,6 @@ public class MyService extends Service {
 
             if (Build.VERSION.SDK_INT >= 23 &&
                     ContextCompat.checkSelfPermission(getApplicationContext(), android.Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-                Toast.makeText(getApplicationContext(),"not access",Toast.LENGTH_LONG).show();
             } else {
                 gpsTracker = new GpsTracker(MyService.this);
                 if (gpsTracker != null) {
@@ -155,7 +154,6 @@ public class MyService extends Service {
                     if ((checkRangeIn(buildinglist, latitude, longitude))) { //(35.~~, 128.~~)
 
                         if (count == 0) {
-                            Toast.makeText(MyService.this, "캘린더 초기", Toast.LENGTH_SHORT).show();
                             buildingName = judgeLocation(buildinglist, latitude, longitude);
                             saveTime = Calendar.getInstance();
                             count++;
@@ -166,7 +164,6 @@ public class MyService extends Service {
 
                         time2 = System.currentTimeMillis();
                         if ((((time2 - time1) / 1000.0) > 300) && (count2 == 0)) {
-                            Toast.makeText(MyService.this, "10초 지", Toast.LENGTH_SHORT).show();
                             addInUser(buildingName, saveTime);
                             count2++;
                             check = 2;
@@ -190,7 +187,7 @@ public class MyService extends Service {
                     }
 
                 } else {
-                    Toast.makeText(getApplicationContext(), "not access", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(getApplicationContext(), "not access", Toast.LENGTH_SHORT).show();
                 }
             }
 
@@ -216,7 +213,6 @@ public class MyService extends Service {
                     if (task.isSuccessful()) {
                         DocumentSnapshot document = task.getResult();
                         if (document.exists()) {
-                            Toast.makeText(MyService.this, "addInUser안으로 들어옴 !!", Toast.LENGTH_SHORT).show();
                             Map<String, Object> space = new HashMap<>(); // 여기안에 정보 적으면 됨 .
                             space.put("place" + document.get("count").toString(), buildingName);
                             SimpleDateFormat fm = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -247,7 +243,7 @@ public class MyService extends Service {
                 }
             });
         }else{
-            Toast.makeText(MyService.this, "빌딩 네임 널임", Toast.LENGTH_SHORT).show();
+           // Toast.makeText(MyService.this, "빌딩 네임 널임", Toast.LENGTH_SHORT).show();
         }
     }
     public void addOutUser() {
