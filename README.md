@@ -22,7 +22,7 @@
     -  <img src="https://user-images.githubusercontent.com/75965560/126599936-2e6dee7c-3964-43de-87df-f909516ce4dd.png" width="40%" height="40%">
 - 사용자가 알림창을 통해 건물에 방문했다고 했을 시 사용자 정보를 외부 database(firebase)에 저장
     -  <img src="https://user-images.githubusercontent.com/75965560/126599486-ce87b64f-cc56-45a9-a1d2-4bd78347422d.png" width="20%" height="20%">
-- GPS의 불확실성으로인한 위치를 정확하게 파악하기 위해 알림창 내에 건물에 출입하지 않았다고 선택하는 버튼도 구현
+- GPS의 불확실성으로 인한 위치를 정확하게 파악하기 위해 알림창 내에 건물에 출입하지 않았다고 선택하는 버튼도 구현
     -  <img src="https://user-images.githubusercontent.com/75965560/126599112-e19d350b-31a7-45d3-a68a-06a7d805e64b.png" width="20%" height="20%">
 - 학교의 통합정보 시스템의 계정을 연동하여 회원가입 없이 경북대 내의 교직원 및 학생들이 사용할 수 있도록 함
     (학교의 통합정보 시스템의 계정을 가져올 수 없으므로 database(firebase)에 학생 정보를 임의로 저장하여 사용함)
